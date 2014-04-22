@@ -3,37 +3,6 @@ import sys
 class RevisedDeferredAcceptance:
 	
 	def __init__(self):
-		self.machines = [
-			{
-				'id': 'A',
-				'capacity': 2,
-				'preference': ['c', 'a', 'b'],
-			},
-			{
-				'id': 'B',
-				'capacity': 1,
-				'preference': ['b', 'c'],
-			},
-		]
-
-		self.jobs = [
-			{
-				'id': 'a',
-				'size': 2,
-				'preference': ['A'],
-			},
-			{
-				'id': 'b',
-				'size': 1,
-				'preference': ['A', 'B'],
-			},
-			{
-				'id': 'c',
-				'size': 1,
-				'preference': ['B', 'A'],	
-			},
-		]
-
 		self.matching = []
 
 		self._lastIndex = None
